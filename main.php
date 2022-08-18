@@ -19,7 +19,7 @@ function twoscomp($bin) {
 }
 
 function smartbindec($bin, $a) {
-    if($a[0] == '0')
+    if($a[0] <= 7)
     return (int) bindec($bin);
     else return -1 * bindec(twoscomp($bin));
 }
